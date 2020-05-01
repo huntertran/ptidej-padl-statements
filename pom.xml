@@ -12,9 +12,9 @@
   <url>http://www.example.com</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -31,29 +31,10 @@
       <scope>system</scope>
       <systemPath>${basedir}/libs/padl.jar</systemPath>
     </dependency>
-    <!-- <dependency>
-      <groupId>com.ibm.toad</groupId>
-      <artifactId>cfparse</artifactId>
-      <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/libs/cfparse.jar</systemPath>
-    </dependency> -->
-    <!-- <dependency>
-      <groupId>cpl</groupId>
-      <artifactId>cpl</artifactId>
-      <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/libs/cpl.jar</systemPath>
-    </dependency> -->
-    <!-- <dependency>
-      <groupId>commons-lang</groupId>
-      <artifactId>commons-lang</artifactId>
-      <version>2.4</version>
-    </dependency> -->
-
   </dependencies>
 
   <build>
+    <sourceDirectory>src/padl</sourceDirectory>
     <pluginManagement>
       <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
